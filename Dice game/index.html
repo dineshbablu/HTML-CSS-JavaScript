@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="mainContainer">
+            <div class="leftContainer">
+                <p id="score">0</p>
+                <p id="heading">Total Score</p>
+            </div>
+            <div id="rightContainer">
+                <div id="buttonContainer"></div>
+                <p id="text">Select Number</p>
+            </div>
+        </div>
+        <div class="rollDiceImage">
+            <div class="rollDiceImageContainer">
+                <img id="diceImg" src="Images/dice_1.png" alt="dice" onclick="rollDice()" />
+                <p id="diceText">Click on Dice to roll</p>
+                <button id="resetScore" onclick="reset()">Reset Score</button>
+                <button id="showRules" >Show Rules</button>
+            </div>
+        </div>
+        <div id="rulesContainer" class="hidden">
+            <h2>How to Play</h2>
+            <p>Select any number.</p>
+            <p>Click on the dice image.</p>
+            <p>If the selected number matches the dice, you earn points equal to the dice number.</p>
+            <p>If it's incorrect, 2 points are deducted.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
